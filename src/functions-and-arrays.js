@@ -1,19 +1,41 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+  if (num1 <= num2) {
+    return num2;
+  } else if (num1 >= num2) {
+    return num1;
+  }
+  
+}
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(words) {
+  for (let i = 0; i < findLongestWord.length; i++) {
+    
+
+  }
+  
+}
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(arrayOfNumbers) {
+  let sum = 0;
+
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    sum += arrayOfNumbers[i];
+  }
+ 
+  return sum 
+  
+}
 
 
 
@@ -26,13 +48,29 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    return sum 
+  }
+
+  return null
+ 
+  
+  let avgTotal = sum / arr.length
+  return avgTotal
+
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) { 
+  
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -59,7 +97,19 @@ function uniquifyArray() {}
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arrTest, wordTest) {
+ 
+  let includesWordTest = arrTest.includes(wordTest);
+  return includesWordTest;
+
+  if (arrTest === []) {
+    return null;
+
+  }
+       
+    }
+
+  
 
 
 
@@ -78,7 +128,19 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsArr, countWords) {
+  let count = 0;
+  for (let i = 0; i < wordsArr.length; i++) {
+    const findWords = wordsArr[i];
+    
+    
+    if (findWords === countWords) {
+      count++;
+    };
+  };
+
+  return count;
+};
 
 
 
